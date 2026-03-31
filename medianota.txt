@@ -1,0 +1,27 @@
+n1 = int(input('digite sua nota:'))
+n2 = int(input('digite sua segunda nota:'))
+
+m = (n1 + n2) / 2
+
+if 9.0 <= m <= 10.0:
+    conceito = "A"
+elif 7.5 <= m < 9.0:
+    conceito = "B"
+elif 6.0 <= m < 7.5:
+    conceito = "C"
+elif 4.0 <= m < 6.0:
+    conceito = "D"
+else:
+    conceito = "E"
+
+if conceito in ["A", "B", "C"]:
+    situacao = "APROVADO"
+else:
+    situacao = "REPROVADO"
+
+print(f"Nota 1: {n1:}")
+print(f"Nota 2: {n2:}")
+print(f"Media:  {m:}")
+print(f"Conceito: {conceito}")
+print(f"Situação: {situacao}")
+#Francisco Zanotelli Demarchi

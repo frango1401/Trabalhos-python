@@ -1,0 +1,19 @@
+s = int(input('digite seu salario: R$'))
+
+if s <= 280:
+   p = 20
+elif s <= 700:
+    p = 15
+elif s <= 1500:
+    p = 10
+else:
+    p = 5
+
+va = s * (p / 100)
+ns = s + va
+
+print(f"Salário antes do reajuste: R$ {s:}")
+print(f"Percentual de aumento aplicado: {p}%")
+print(f"Valor do aumento: R$ {va:}")
+print(f"Novo salário, após o aumento: R$ {ns:}")
+Organizações Tabajara
