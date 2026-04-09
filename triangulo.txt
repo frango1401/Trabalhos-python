@@ -1,0 +1,17 @@
+a = int(input('digite o preimeiro lado do triangulo:'))
+b = int(input('digite o segundo lado do triangulo:'))
+c = int(input('digite o terceiro lado do triangulo:'))
+
+if (a + b > c) and (a + c > b) and (b + c > a):
+    print("Os valores formam um triângulo!")
+    
+    if a == b == c:
+        print("Tipo: Equilátero (todos os lados iguais)")
+    elif a == b or a == c or b == c:
+        print("Tipo: Isósceles (dois lados iguais)")
+    else:
+        print("Tipo: Escaleno (todos os lados diferentes)")
+else:
+    print("Os valores informados não podem formar um triangulo.")
+
+#Francisco Zanotelli Demarchi

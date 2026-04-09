@@ -1,0 +1,13 @@
+n1 = int(input('digite um numero par ou inpar:'))
+n2= int(input('digite um numero par ou inpar:'))
+
+op = input("Operação (+, -, *, /): ")
+res = eval(f"{n1}{op}{n2}")
+
+p = "par" if res % 2 == 0 else "ímpar"
+s = "positivo" if res > 0 else "negativo" if res < 0 else "zero"
+t = "inteiro" if res == int(res) else "decimal"
+
+print(f"Resultado: {res} ({p}, {s}, {t})")
+
+#Francisco Zanotelli Demarchi
